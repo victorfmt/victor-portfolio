@@ -1,0 +1,114 @@
+.contact-page {
+  width: min(calc(100% - 48px), 980px);
+  margin: 0 auto;
+  padding: 64px 0 90px;
+}
+.contact-heading {
+  margin: 0 0 20px;
+  font-size: clamp(2.5rem, 6vw, 5.6rem);
+  line-height: .96;
+  letter-spacing: -.045em;
+  font-weight: 600;
+}
+.contact-intro {
+  max-width: 660px;
+  margin: 0 0 48px;
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.contact-intro a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+.contact-form {
+  max-width: 720px;
+}
+.form-row {
+  margin-bottom: 22px;
+}
+.form-row label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: .86rem;
+  font-weight: 600;
+}
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  color: #111;
+  padding: 13px 14px;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+  border-radius: 0;
+}
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: 1px solid #111;
+  border-color: #111;
+}
+.form-row textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+.form-actions {
+  margin-top: 30px;
+}
+.form-actions button {
+  appearance: none;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  padding: 12px 20px;
+  font: inherit;
+  font-size: .92rem;
+  cursor: pointer;
+  border-radius: 0;
+}
+.form-actions button:hover,
+.form-actions button:focus-visible {
+  background: #fff;
+  color: #111;
+}
+.form-note {
+  margin-top: 15px;
+  color: #777;
+  font-size: .82rem;
+  line-height: 1.5;
+}
+.contact-end {
+  margin-top: 70px;
+  padding-top: 22px;
+  border-top: 1px solid #e7e7e7;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: .9rem;
+}
+.contact-end a {
+  text-decoration: none;
+}
+.contact-end a:hover,
+.contact-end a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.form-honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+@media (max-width: 760px) {
+  .contact-page {
+    width: min(calc(100% - 32px), 980px);
+    padding-top: 44px;
+  }
+  .contact-intro {
+    margin-bottom: 38px;
+  }
+}

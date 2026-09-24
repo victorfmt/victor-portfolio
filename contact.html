@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact intermedia artist Victor F. M. Torres.">
+  <title>Contact | Victor F. M. Torres</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="identity" href="index.html">
+      <h1>Victor F. M. Torres</h1>
+      <p>Intermedia Artist</p>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Work</a>
+      <a href="bio.html">Bio</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <h2 class="contact-heading">Contact</h2>
+
+    <div class="contact-intro">
+      <p>For exhibitions, collaborations, teaching, commissions, and other inquiries, please use the form below.</p>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/xnpnzgrv" method="POST">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text">
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <div class="form-honeypot" aria-hidden="true">
+        <label for="_gotcha">Leave this field empty</label>
+        <input id="_gotcha" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+
+      <input type="hidden" name="_subject" value="Portfolio website contact">
+
+      <div class="form-actions">
+        <button type="submit">Send message</button>
+      </div>
+
+      <p class="form-note">This form is processed securely by Formspree.</p>
+    </form>
+
+    <div class="contact-end">
+      <a href="index.html">← Work</a>
+      <a href="bio.html">Bio →</a>
+    </div>
+  </main>
+</body>
+</html>
