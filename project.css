@@ -1,5 +1,5 @@
 .project-page{width:min(calc(100% - 48px),1320px);margin:0 auto;padding:54px 0 90px}
-.project-page{max-width:100%; width:auto;height:auto;max-height:76vh;object-fit: contain;}
+
 .project-back{display:inline-block;margin-bottom:38px;color:#444;text-decoration:none;font-size:.9rem}
 .project-back:hover{text-decoration:underline;text-underline-offset:4px}
 .project-header{max-width:940px;margin-bottom:46px}
