@@ -169,3 +169,33 @@ nav a:focus-visible {
     margin-top: 5px;
   }
 }
+.identity {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "mark name"
+    "mark role";
+  column-gap: 0.75rem;
+  align-items: center;
+  width: fit-content;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-mark {
+  grid-area: mark;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.identity h1 {
+  grid-area: name;
+  margin: 0;
+}
+
+.identity p {
+  grid-area: role;
+  margin: 0;
+}
